@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegance Jewelry | Perhiasan Mewah Sejak 1975</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <script type="module" src="js/firebase.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js"></script>
+  <script src="js/auth.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/firebase.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+  <style>
+    .shadow-md i {
+      overflow: hidden;
+      display: block;
+    }
+  </style>
+</head>
+<body class="font-[Montserrat] bg-gray-50 text-gray-900">
+
+<div id="preloader">
+  <div id="lottie-container"></div>
+</div>
+
+
+<div id="header"></div>
+
+<br>
+<br>
+<br>
+<br>
+<section class="container mx-auto py-20 px-6 md:px-12 lg:px-20 " data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mt-12 text-black">About Us</h2>
+    <p class="text-gray-700 mt-4 max-w-2xl mx-auto leading-relaxed">
+      Elegance Jewelry - More than 50 years of bringing beauty to every piece of jewelry.
+    </p>
+  </div>
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2" data-aos="fade-right">
+      <img src="img/cratman.webp" alt="Elegance Jewelry" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="md:w-1/2 space-y-6" data-aos="fade-left">
+      <p class="text-gray-700 leading-relaxed">
+        Since 1970, Elegance Jewelry has been a symbol
+        of luxury and beauty in the jewelry world. With exclusive designs
+        and high-quality materials, we present jewelry that not only beautifies the appearance,
+        but also becomes a valuable legacy for future generations.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        We emphasize craftsmanship in every detail, ensuring that every product is of the highest quality.
+        From engagement rings to fine jewelry collections, Elegance Jewelry is always committed to delivering
+        perfection in every piece.
+      </p>
+      <p class="text-gray-700 leading-relaxed font-semibold italic">
+        "True beauty lies not only in the design, but also in the meaning and story behind each piece of jewelry."
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Elegance Jewelry is also committed to sustainability
+        and ethics in every production process. We only use the finest materials
+        that are sourced responsibly, ensuring that each piece of jewelry is not only
+        beautiful but also has a deeper value, both socially and environmentally.
+      </p>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section class="container mx-auto py-20 px-6 md:px-12 lg:px-20 bg-white"  data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold text-black">What Makes Us Different</h2>
+    <p class="text-gray-700 mt-4 max-w-2xl mx-auto leading-relaxed">
+      Why is Elegance Jewelry the top choice for luxury jewelry enthusiasts?
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+    <div data-aos="fade-up" class="p-6 bg-gray-100 rounded-lg shadow-md">
+      <i class="fa-solid fa-gem text-[#b89b72] text-5xl mb-4"></i>
+      <h3 class="text-xl font-bold text-[#b89b72]">Premium Quality</h3>
+      <p class="text-gray-700 mt-2 leading-relaxed">We only use the finest diamonds and gold that meet international standards.</p>
+    </div>
+    <div data-aos="fade-up" class="p-6 bg-gray-100 rounded-lg shadow-md">
+      <i class="fa-solid fa-handshake text-[#b89b72] text-5xl mb-4"></i>
+      <h3 class="text-xl font-bold text-[#b89b72]">Customer Trust</h3>
+      <p class="text-gray-700 mt-2 leading-relaxed">More than 50 years of building strong relationships with loyal customers.</p>
+    </div>
+    <div data-aos="fade-up" class="p-6 bg-gray-100 rounded-lg shadow-md">
+      <i class="fa-solid fa-leaf  text-[#b89b72] text-5xl mb-4"></i>
+      <h3 class="text-xl font-bold text-[#b89b72]">Eco Friendly</h3>
+      <p class="text-gray-700 mt-2 leading-relaxed">Using sustainable materials sourced ethically.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<section class="container mx-auto py-20 px-6 md:px-12 lg:px-20 bg-gray-50"  data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold text-black">Sustainable Resources</h2>
+    <p class="text-gray-700 mt-4 max-w-2xl mx-auto leading-relaxed">
+      Elegance Jewelry is committed to using only ethically and sustainably sourced gold and diamonds.
+    </p>
+  </div>
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2" data-aos="fade-right">
+      <img src="img/tambang.jpg" alt="Pertambangan Berkelanjutan" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="md:w-1/2 space-y-6" data-aos="fade-left">
+      <p class="text-gray-700 leading-relaxed">
+        We collaborate with trusted suppliers who implement responsible mining practices.
+        The diamonds we use come from sources certified by <span class="font-semibold">Kimberley Process</span>,
+        A global initiative that ensures diamonds do not come from conflict zones.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        The gold we use comes from mines that adhere to the principles of <span class="font-semibold">Fairmined</span>
+        dan <span class="font-semibold">Fairtrade</span>, ensuring the well-being of miners while protecting the environment.
+      </p>
+      <p class="text-gray-700 leading-relaxed font-semibold italic">
+        "True beauty is not only about luxury but also about responsibility for the world we live in."
+      </p>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div id="footer"></div>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      const headerContainer = document.getElementById("header");
+      headerContainer.innerHTML = data;
+
+      // Mengeksekusi ulang semua <script> yang ada di header.html
+      headerContainer.querySelectorAll("script").forEach(oldScript => {
+        const newScript = document.createElement("script");
+        newScript.textContent = oldScript.textContent;
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error("Error loading header:", error));
+
+
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+
+
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById("lottie-container"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "img/loading.json"
+  });
+
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+    }, 1000); // Delay agar terlihat smooth
+  });
+
+
+
+</script>
+
+</body>
+</html>

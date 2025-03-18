@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Collection</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Meta Info -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS -->
+
+  <!-- Icon dan Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/013/059/706/original/diamond-logo-template-free-vector.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Animasi dan Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <!-- Flowbite -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    :root {
+      --primary-bg: #f8f9fa;
+      --text-color: #000000;
+      --accent-color: #b89b72;
+      --accent-dark: #9a815d;
+      --accent-light: #d4c4a9;
+      --white: #ffffff;
+      --light-gray: #e9ecef;
+      --gray: #6c757d;
+    }
+
+    body {
+      background-color: var(--primary-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, span, button, a {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fireplace-item {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fireplace-item img {
+      object-cover: cover;
+      transition: all 0.3s ease;
+    }
+
+    .fireplace-overlay h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fireplace-overlay p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fireplace-overlay button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--accent-color);
+      color: var(--white);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fireplace-overlay button:hover {
+      background: var(--accent-dark);
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'montserrat': ['Montserrat', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="text-center font-montserrat">
+
+
+<div id="preloader">
+  <div id="lottie-container"></div>
+</div>
+
+<div id="header" class="text-left"></div>
+
+<div class="relative w-full h-96">
+  <video autoplay loop muted class="w-full h-full object-cover brightness-110">
+    <source src="vid/modern_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 p-4">
+    <h1 class="text-4xl font-bold mb-4 text-white font-montserrat" data-aos="fade-down" data-aos-duration="1000">
+      DISCOVER YOUR PERFECT JEWELRY
+    </h1>
+    <p class="mb-6 text-white font-montserrat" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+      Explore Our Exclusive Collection Crafted for Elegance and Timeless Beauty
+    </p>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="container mx-auto p-3">
+  <h2 class="text-3xl font-bold mb-6 text-center border-b-2 border-[var(--accent-color)] inline-block pb-2 font-montserrat">Our Collections</h2>
+</div>
+<div class="container mx-auto px-4 mb-20">
+
+  <div class="grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-3">
+
+    <!-- Produk 1 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=23'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/etherea_pendant_necklace.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Etherea Pendant Necklace</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K Rose Gold & Diamond</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1200.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=24'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/majeste_ring.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Majeste Ring</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K White Gold & Diamonds</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$900.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=3'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/Royal_Heirloom_Earrings.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Royal Heirloom Earrings</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">Artisan Collection</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1,499.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=4'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/Ethereal_Grace_Earrings.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Ethereal Grace Earrings</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">24k Gold & Diamonds</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1999.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=21'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/solara_hoops.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Solara Hoops</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K White Gold</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$900.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+         onclick="window.location.href='detail_product.html?id=10'">
+      <div class="relative">
+        <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+        <img src="img/lumiere_necklace.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+      </div>
+      <div class="p-2 sm:p-4 w-full">
+        <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Lumière Necklace</h2>
+        <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k Gold & Diamonds</p>
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1499.99</p>
+      </div>
+      <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+    </div>
+  </div>
+
+
+</div>
+
+<!--HANDCRAFTED -->
+
+
+<main class="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mt-10 font-montserrat">
+  <div class="flex flex-col justify-center order-2 md:order-none" data-aos="fade-down" data-aos-duration="1500">
+    <h1 class="text-2xl font-bold text-center mt-10 font-montserrat">
+      Handcrafted by Elegance Jewelry
+    </h1>
+    <p class="text-gray-600 text-center mt-7 font-montserrat" data-aos="fade-down" data-aos-delay="300">
+      Meticulously crafted by skilled artisans, Handcrafted by Elegance Jewelry showcases the beauty of human touch and tradition. Each piece tells a unique story, blending timeless techniques with contemporary flair.
+    </p>
+  </div>
+  <div class="order-1 md:order-none" data-aos="fade-left" data-aos-duration="1000">
+    <video class="w-full rounded-lg shadow-lg" autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/6718799/6718799-uhd_4096_2160_25fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</main>
+
+<div class="grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 font-montserrat">
+
+  <!-- Product 1 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=1'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/Celestial_Radiance_Ring.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Celestial Radiance Ring</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">White, Yellow & Rose Gold</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1299.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=2'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/Golden_Serenity_Necklace.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Golden Serenity Necklace</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k Gold</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$899.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=3'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/Royal_Heirloom_Earrings.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Royal Heirloom Earrings</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k Gold & Sapphire</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1499.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=4'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/Ethereal_Grace_Earrings.jpeg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Ethereal Grace Earrings</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">24k Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1999.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+  <br>
+</div>
+
+<div class="flex justify-center mt-6 font-montserrat">
+  <a href="handcrafted.html" class="bg-[#b89b72] text-white font-bold py-2 px-7 rounded-full hover:bg-[#a0805e] transition font-montserrat">
+    Explore
+  </a>
+</div>
+
+<!--vintage -->
+<main class="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mt-10 font-montserrat">
+
+  <div class="order-1 md:order-none" data-aos="fade-left" data-aos-duration="1000">
+    <video class="w-full rounded-lg shadow-lg" autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/6641565/6641565-uhd_4096_2160_25fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="flex flex-col justify-center order-2 md:order-none" data-aos="fade-down" data-aos-duration="1500">
+    <h1 class="text-2xl font-bold text-center mt-10 font-montserrat">
+      Vintage by Elegance Jewelry
+    </h1>
+    <p class="text-gray-600 text-center mt-7 font-montserrat" data-aos="fade-down" data-aos-delay="300">
+      Inspired by timeless designs of the Victorian era, Vintage by Elegance Jewelry captures the essence of enduring sophistication.
+    </p>
+  </div>
+
+</main>
+
+<div class="grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 font-montserrat">
+
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=9'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/eterna_earrings.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Eterna Earrings</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$699.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=10'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/lumiere_necklace.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Lumière Necklace</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1499.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=11'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/lucienne_bracelet.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Lucienne Bracelet</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18k White Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1000.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=12'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/imperial_crest_ring.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Imperial Crest Ring</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K Platinum & Diamond</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$700.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <BR>
+</div>
+<div class="flex justify-center mt-6 font-montserrat">
+  <a href="vintage.html" class="bg-[#b89b72] text-white font-bold py-2 px-7 rounded-full hover:bg-[#a0805e] transition font-montserrat">
+    Explore
+  </a>
+</div>
+
+<!--MODERN-->
+<main class="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mt-10">
+  <div class="flex flex-col justify-center order-2 md:order-none" data-aos="fade-down" data-aos-duration="1500">
+    <h1 class="text-2xl font-bold text-center mt-10">
+      Modern by Elegance Jewelry
+    </h1>
+    <p class="text-gray-600 text-center mt-7" data-aos="fade-down" data-aos-delay="300">
+      Embracing sleek lines and innovative designs, Modern by Elegance Jewelry reflects contemporary sophistication. Our pieces combine minimalism with bold elements, creating timeless statements for every occasion.
+    </p>
+
+  </div>
+
+  <div class="order-1 md:order-none" data-aos="fade-left" data-aos-duration="1000">
+    <video class="w-full rounded-lg shadow-lg" autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/20445090/20445090-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</main>
+
+<div class="grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 font-montserrat">
+
+  <!-- Product 17 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=17'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/seraphina_bracelet.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Seraphina Bracelet</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K White Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1000.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 18 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=18'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/valora_necklace.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Valora Necklace</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">Platinum & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1000.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+
+  <!-- Product 19 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=19'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/aurielle_earrings.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Aurielle Earrings</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">24K Gold, Pearls & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$1090.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+
+  <!-- Product 20 -->
+  <div class="bg-white cursor-pointer rounded-xl shadow-md hover:shadow-lg transition relative group w-full"
+       onclick="window.location.href='detail_product.html?id=20'">
+    <div class="relative">
+      <span class="absolute top-1 left-1 bg-[#b89b72] text-white px-1.5 py-0.5 text-[10px] rounded-full">New</span>
+      <img src="img/regent_chain_ring.jpg" alt="Product Image" class="w-full h-36 sm:h-48 md:h-52 lg:h-60 object-cover rounded-t-xl">
+    </div>
+    <div class="p-2 sm:p-4 w-full">
+      <h2 class="text-[11px] sm:text-base md:text-lg lg:text-xl font-bold whitespace-normal break-words line-clamp-2 min-h-[2.5em]">Regent Chain Ring</h2>
+      <p class="text-[10px] sm:text-sm text-gray-600 whitespace-normal break-words line-clamp-1">18K Yellow Gold & Diamonds</p>
+      <p class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mt-1 sm:mt-2" style="color: #b89b72;">$700.99</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 w-0 h-1 bg-[#b89b72] transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></div>
+  </div>
+  <BR>
+</div>
+<div class="flex justify-center mt-6 font-montserrat">
+  <a href="modern.html" class="bg-[#b89b72] text-white font-bold py-2 px-7 rounded-full hover:bg-[#a0805e] transition font-montserrat">
+    Explore
+  </a>
+</div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+  <div id="footer" class="text-left"></div>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        const headerContainer = document.getElementById("header");
+        headerContainer.innerHTML = data;
+
+        // Mengeksekusi ulang semua <script> yang ada di header.html
+        headerContainer.querySelectorAll("script").forEach(oldScript => {
+          const newScript = document.createElement("script");
+          newScript.textContent = oldScript.textContent;
+          document.body.appendChild(newScript);
+        });
+      })
+      .catch(error => console.error("Error loading header:", error));
+
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
+
+
+
+    var animation = lottie.loadAnimation({
+      container: document.getElementById("lottie-container"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "img/loading.json"
+    });
+
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+      }, 1000); // Delay agar terlihat smooth
+    });
+
+
+
+  </script>
+
+</body>
+</html>
+

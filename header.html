@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegance Jewelry | Perhiasan Mewah Sejak 1975</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <script type="module" src="js/firebase.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js"></script>
+  <script src="js/auth.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/firebase.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-white shadow-md">
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="hidden md:flex items-center justify-between w-full px-6 py-4 ">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <a href="index.html" class="text-2x font-bold">Elegance Jewelry</a>
+    </div>
+
+    <!-- Menu Tengah -->
+    <div class="flex-1 flex justify-center space-x-8 mr-4">
+      <a href="index.html" class="relative text-[#333333] hover:text-[#a28460] transition-colors duration-300 group">
+        Home
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#a28460] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="collection.html" class="relative text-[#333333] hover:text-[#a28460] transition-colors duration-300 group">
+        Collection
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#a28460] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="about_us.html" class="relative text-[#333333] hover:text-[#a28460] transition-colors duration-300 group">
+        About Us
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#a28460] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="kontak_kami.html" class="relative text-[#333333] hover:text-[#a28460] transition-colors duration-300 group">
+        Contact
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#a28460] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </div>
+
+
+
+  </nav>
+
+  <!-- Mobile Menu & Hamburger -->
+  <nav class="md:hidden flex items-center justify-between px-6 py-4">
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="flex flex-col items-center">
+      <div class="w-6 h-0.5 bg-gray-800 mb-1"></div>
+      <div class="w-6 h-0.5 bg-gray-800 mb-1"></div>
+      <div class="w-6 h-0.5 bg-gray-800"></div>
+    </button>
+
+    <!-- Logo -->
+    <div class="w-full flex justify-center">
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="text-2l font-semibold text-gray-900">Elegance Jewelry</a>
+      </div>
+    </div>
+
+
+  </nav>
+
+
+  <!-- Hamburger Menu -->
+
+  </div>
+
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200" data-aos="fade-down" data-aos-duration="500">
+
+    <ul class="py-4 px-6 space-y-4">
+
+      <li><a href="index.html" class="block hover:bg-[#a28460] hover:text-white px-3 py-2 rounded-lg">Home</a></li>
+      <li><a href="collection.html" class="block hover:bg-[#a28460] hover:text-white px-3 py-2 rounded-lg">Collection</a></li>
+      <li><a href="about_us.html" class="block hover:bg-[#a28460] hover:text-white px-3 py-2 rounded-lg">About Us</a></li>
+      <li><a href="kontak_kami.html" class="block hover:bg-[#a28460] hover:text-white px-3 py-2 rounded-lg">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  AOS.init();
+
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+
+  function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown-perhiasan");
+    const arrow = document.getElementById("arrow");
+    dropdown.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-90");
+  }
+
+  function toggleNestedDropdown() {
+    const nestedDropdown = document.getElementById("nested-dropdown");
+    const nestedArrow = document.getElementById("nested-arrow");
+    nestedDropdown.classList.toggle("hidden");
+    nestedArrow.classList.toggle("rotate-90");
+  }
+
+
+  function animateStats() {
+    const counters = document.querySelectorAll('.stat-number');
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const duration = 2000; // Durasi animasi dalam ms
+      const interval = 10;   // Kecepatan update angka
+      const increment = target / (duration / interval);
+
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = Math.ceil(current);
+          setTimeout(updateCounter, interval);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+  }
+
+  // Panggil animasi saat halaman selesai dimuat
+  window.onload = animateStats;
+
+
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById("lottie-container"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "img/loading.json"
+  });
+
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+    }, 1000); // Delay agar terlihat smooth
+  });
+
+</script>
+</body>
+</html>

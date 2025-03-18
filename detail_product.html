@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/013/059/706/original/diamond-logo-template-free-vector.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    /* Custom styles to control image dimensions */
+    .product-image-container {
+      max-width: 300px; /* Adjust this value to control maximum width */
+      max-height: 300px; /* Adjust this value to control maximum height */
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 50%;
+      object-fit: contain; /* This keeps aspect ratio */
+
+
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Variabel warna */
+    :root {
+      --primary-bg: #f8f9fa;
+      --text-color: #000000;
+      --accent-color: #b89b72;
+      --accent-dark: #9a815d;
+      --accent-light: #d4c4a9;
+      --white: #ffffff;
+      --light-gray: #e9ecef;
+      --gray: #6c757d;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100">
+
+<div id="preloader">
+  <div id="lottie-container"></div>
+</div>
+
+<div id="header"></div>
+
+<section class="py-8 bg-white mt-10 md:py-16 dark:bg-gray-900 antialiased">
+  <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
+      <!-- Image container with size constraints -->
+      <!-- Image container with card style -->
+      <div class="shrink-0 product-image-container">
+        <div class="bg-gray-100 rounded-lg shadow-md inline-block">
+          <img id="productImage" class="product-image dark:hidden rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg" alt="Product Image" />
+          <img class="product-image hidden dark:block rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="Product Image Dark Mode" />
+        </div>
+      </div>
+
+
+      <div class="mt-6 sm:mt-8 lg:mt-0">
+        <h1 id="productName" class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
+          <!-- Product name will be inserted here -->
+        </h1>
+        <div class="mt-4 sm:flex sm:items-center sm:gap-4">
+          <p id="productPrice" style="color: #b89b72;" class="text-2xl font-extrabold sm:text-3xl">
+
+          <!-- Product price will be inserted here -->
+          </p>
+
+
+
+
+
+        <div class="flex items-center gap-2 mt-2 sm:mt-0">
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+              </svg>
+
+
+            </div>
+            <p id="productRating" class="text-sm font-medium leading-none text-gray-500 dark:text-gray-400">
+              (5.0)
+            </p>
+            <a
+              href="#"
+              id="productReviews"
+              class="text-sm font-medium leading-none text-gray-900 underline hover:no-underline dark:text-white"
+            >
+              345 Reviews
+            </a>
+          </div>
+        </div>
+
+        <div id="productSizes" class="mt-6">
+          <h3 class="text-sm font-medium text-[#b89b72] dark:text-white">Sizes:</h3>
+          <div id="sizeList" class="mt-2 flex flex-wrap gap-2">
+            <!-- Size options will be inserted here -->
+          </div>
+        </div>
+
+
+        <hr class="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
+
+        <p id="productDescription" class="mb-6 text-gray-500 dark:text-gray-400">
+          <!-- Product description will be inserted here -->
+        </p>
+
+        <p id="productFeatures" class="text-gray-500 dark:text-gray-400">
+          <!-- Product features will be inserted here -->
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+
+<script>
+  // Load Header dan Footer
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      const headerContainer = document.getElementById("header");
+      headerContainer.innerHTML = data;
+
+      // Mengeksekusi ulang semua <script> yang ada di header.html
+      headerContainer.querySelectorAll("script").forEach(oldScript => {
+        const newScript = document.createElement("script");
+        newScript.textContent = oldScript.textContent;
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error("Error loading header:", error));
+
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+
+  // Preloader Animation
+  var animation = lottie.loadAnimation({
+    container: document.getElementById("lottie-container"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "img/loading.json"
+  });
+
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+    }, 1000); // Delay agar terlihat smooth
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return DOMPurify.sanitize(urlParams.get(param));
+    }
+
+    const productId = getQueryParam("id");
+
+    $.ajax({
+      url: "products.json",
+      dataType: "json",
+      success: function (products) {
+        if (productId && products[productId]) {
+          const product = products[productId];
+
+          $("#productName").text(DOMPurify.sanitize(product.name));
+          $("#productPrice").text("$" + DOMPurify.sanitize(product.price.toLocaleString()));
+          $("#productImage").attr({ "src": "img/" + DOMPurify.sanitize(product.image), "alt": DOMPurify.sanitize(product.name) });
+          $("#productDescription").text(DOMPurify.sanitize(product.description || "No description available."));
+          $("#productFeatures").text(DOMPurify.sanitize(product.features || "No features listed."));
+          $("#productRating").html('<i class="fas fa-star text-yellow-300"></i> (' + DOMPurify.sanitize(product.rating) + ')');
+          $("#productReviews").text(DOMPurify.sanitize(product.reviewsCount) + " Reviews");
+
+          if (product.sizes && product.sizes.length > 0) {
+            $("#sizeList").empty();
+            product.sizes.forEach(size => {
+              $("#sizeList").append(`<span class="bg-gray-200 px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-300">${DOMPurify.sanitize(size)}</span>`);
+            });
+          } else {
+            $("#productSizes").hide();
+          }
+        } else {
+          $("body").html("<div class='flex items-center justify-center h-screen'><h1 class='text-3xl text-red-500 font-bold'>Barang tidak ditemukan!</h1></div>");
+        }
+      }
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+
+
+</body>
+</html>

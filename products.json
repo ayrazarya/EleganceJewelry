@@ -1,0 +1,291 @@
+{
+  "1": {
+    "name": "Celestial Radiance Ring",
+    "price": 1299.99,
+    "image": "Celestial_Radiance_Ring.jpeg",
+    "description": "A luxurious ring inspired by the stars, perfect for special occasions. Crafted with premium materials to create a stunning piece that captures light beautifully.",
+    "features": "Available in white gold, yellow gold, and rose gold. Set with brilliant-cut diamonds for exceptional sparkle. Comes in a premium gift box with certificate of authenticity.",
+    "caption": "A luxurious ring inspired by the stars, perfect for special occasions.",
+    "rating": "4.9",
+    "reviewsCount": "127",
+    "sizes": ["5", "6", "7", "8", "9", "10"]
+  },
+
+  "2": {
+    "name": "Golden Serenity Necklace",
+    "price": 899.99,
+    "image": "Golden_Serenity_Necklace.jpeg",
+    "description": "Elegant gold necklace that brings serenity and grace to your outfit. Designed to complement both casual and formal attire with its timeless aesthetic.",
+    "features": "Crafted in 18k gold with a secure lobster clasp. Adjustable chain length for versatile styling. Hypoallergenic material suitable for sensitive skin.",
+    "caption": "Elegant gold necklace that brings serenity and grace to your outfit.",
+    "rating": "5.0",
+    "reviewsCount": "93",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+  "3": {
+    "name": "Royal Heirloom Earrings",
+    "price": 1499.99,
+    "image": "Royal_Heirloom_Earrings.jpeg",
+    "description": "Exquisite handcrafted earrings with intricate gemstone detailing, perfect for special occasions.",
+    "features": "18k gold, Sapphire stones, Hypoallergenic",
+    "caption": "A touch of royalty for your collection.",
+    "rating": "5.0",
+    "reviewsCount": "25",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+  "4": {
+    "name": "Ethereal Grace Earrings",
+    "price": 1999.99,
+    "image": "Ethereal_Grace_Earrings.jpeg",
+    "description": "Elegant earrings crafted with precision, featuring sparkling diamonds and a timeless design.",
+    "features": "24k gold, Diamond accents, Lightweight design",
+    "caption": "Grace and elegance in every detail.",
+    "rating": "5.0",
+    "reviewsCount": "25",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+
+  "5": {
+    "name": "Majestic Ring",
+    "price": 1299.99,
+    "image": "Majestic_Ring.jpeg",
+    "description": "An elegant ring crafted with intricate details and a touch of regal charm.",
+    "features": "14k gold, Hand-polished finish, Timeless design",
+    "caption": "Wear your majesty with pride.",
+    "rating": "4.8",
+    "reviewsCount": "32",
+    "sizes": ["6", "7", "8", "9", "10"]
+  },
+
+  "6": {
+    "name": "Heavenly Earring",
+    "price": 1799.99,
+    "image": "Heavenly_Earring.jpeg",
+    "description": "Graceful earrings that shimmer with celestial beauty, perfect for special occasions.",
+    "features": "18k white gold, Diamond accents, Lightweight comfort",
+    "caption": "A touch of heaven for your ears.",
+    "rating": "5.0",
+    "reviewsCount": "25",
+    "sizes": ["16", "18", "20"]
+  },
+
+  "7": {
+    "name": "Celestial Golden Necklace",
+    "price": 2499.99,
+    "image": "Celestial_Golden_Necklace.jpeg",
+    "description": "A radiant necklace with golden hues, inspired by the cosmos and crafted to perfection.",
+    "features": "24k gold, Starry design, Adjustable length",
+    "caption": "Shine like a star with every step.",
+    "rating": "4.9",
+    "reviewsCount": "18",
+    "sizes": ["40", "45", "50"]
+  },
+
+
+  "8": {
+    "name": "Celestia Grace",
+    "price": 2499.99,
+    "image": "Celestia_Grace.webp",
+    "description": "A vintage-inspired necklace, delicately crafted with 24k gold, featuring celestial motifs that echo the beauty of a starlit sky. Perfect for adding a touch of ethereal charm to any occasion.",
+    "features": "24k gold, Starry design, Adjustable length",
+    "caption": "Embrace the cosmos, wear timeless elegance.",
+    "rating": "4.9",
+    "reviewsCount": "18",
+    "sizes": ["40", "45", "50"]
+  },
+
+  "9": {
+    "name": "Eterna Earrings",
+    "price": 699.99,
+    "image": "eterna_earrings.jpg",
+    "description": "The pair of earrings that exude timeless elegance with their sleek 18K gold design, adorned with brilliant-cut diamonds that shimmer with every movement.",
+    "features": "18k gold, Seamless design, Brilliant-Cut Diamond",
+    "caption": "Where luxury meets forever.",
+    "rating": "4.9",
+    "reviewsCount": "57",
+    "sizes": ["16", "18", "20"]
+  },
+
+  "10": {
+    "name": "Lumière Necklace",
+    "price": 1499.99,
+    "image": "lumiere_necklace.jpg",
+    "description": "It shows a pure luxury, featuring a sleek 18K gold chain adorned with dazzling brilliant-cut diamonds for a radiant, timeless glow.",
+    "features": "18k gold, Seamless design, Brilliant-Cut Diamond, Adjustable length",
+    "caption": "A shimmer that lasts forever.",
+    "rating": "4.9",
+    "reviewsCount": "34",
+    "sizes": ["40", "45", "50"]
+  },
+
+  "11": {
+    "name": "Lucienne Bracelet",
+    "price": 1000.99,
+    "image": "lucienne_bracelet.jpg",
+    "description": "It exudes pure sophistication with its 18k white gold design, adorned with dazzling brilliant-cut diamonds that shimmer effortlessly.",
+    "features": "18k gold, Handcrafted Precision, Seamless Design, Adjustable Fit",
+    "caption": "Crafted for those who shine without limits.",
+    "rating": "4.9",
+    "reviewsCount": "68",
+    "sizes": ["18", "20", "22"]
+  },
+
+  "12": {
+    "name": "Imperial Crest Ring",
+    "price": 700.99,
+    "image": "imperial_crest_ring.jpg",
+    "description": "It represents timeless elegance, featuring a flawless 18K platinum band adorned with a brilliant-cut solitaire diamond, radiating pure sophistication.",
+    "features": "18K Platinum, Brilliant-Cut Solitaire Diamond, Handcrafted Precision, Seamless Design, Comfort Fit.",
+    "caption": "A legacy of brilliance, worn forever.",
+    "rating": "4.9",
+    "reviewsCount": "31",
+    "sizes": ["5", "6", "7", "8", "9", "10"]
+  },
+
+  "13": {
+    "name": "Sovereign Majesty Ring",
+    "price": 900.99,
+    "image": "sovereign_majesty_ring.jpg",
+    "description": "It represents power, featuring an 18K white gold band adorned with a flawless emerald-cut diamond, embodying timeless luxury.",
+    "features": "18K Gold, Brilliant-Cut Solitaire Diamond, Handcrafted Precision, Seamless Design, Comfort Fit.",
+    "caption": "Designed for royalty, destined for eternity.",
+    "rating": "5.0",
+    "reviewsCount": "54",
+    "sizes": ["5", "6", "7", "8", "9", "10"]
+  },
+
+  "14": {
+    "name": "Regalia Luxe Bracelet",
+    "price": 2000,
+    "image": "regalia_luxe_bracelet.jpg",
+    "description": "Refined elegance, featuring an 18K rose gold chain adorned with round-cut diamonds that radiate brilliance with every movement.",
+    "features": "18K Rose Gold, Round-Cut Diamonds, Handcrafted Precision, Adjustable Clasp, Seamless Design",
+    "caption": "Grace in every gesture.",
+    "rating": "5.0",
+    "reviewsCount": "32",
+    "sizes": ["18", "20", "22"]
+  },
+
+  "15": {
+    "name": "Celestique Necklace",
+    "price": 2300.99,
+    "image": "celestique_necklace.jpg",
+    "description": "It exudes celestial beauty, crafted from 24K white gold and adorned with a cascade of pear-shaped diamonds, creating an ethereal, luminous glow.",
+    "features": "24K White Gold, Pear-Shaped Diamonds, Handcrafted Precision, Adjustable Length, Timeless Design",
+    "caption": "A brilliance as infinite as the night sky.",
+    "rating": "5.0",
+    "reviewsCount": "32",
+    "sizes": ["40", "45", "50"]
+  },
+
+  "16": {
+    "name": "Elysian Pearl Earrings",
+    "price": 2310.99,
+    "image": "elysian_pearl_earrings.jpg",
+    "description": "Embody pure sophistication, featuring flawless South Sea pearls suspended from an 18K white gold setting, accented with brilliant-cut diamonds for an ethereal glow.",
+    "features": "18K Gold, South Sea Pearls, Brilliant-Cut Diamonds, Handcrafted Precision, Secure Closure",
+    "caption": "Pearls of heaven, diamonds of light",
+    "rating": "5.0",
+    "reviewsCount": "33",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+  "17": {
+    "name": "Seraphina Bracelet",
+    "price": 1000.99,
+    "image": "seraphina_bracelet.jpg",
+    "description": "A masterpiece of sophistication, featuring a sleek 18K white gold band adorned with marquise-cut diamonds, elegantly designed to capture light with every movement.",
+    "features": "18K Gold, Seamless Design, Adjustable Fit",
+    "caption": "A touch of radiance, a lifetime of elegance.",
+    "rating": "4.9",
+    "reviewsCount": "30",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+  "18": {
+    "name": "Valora Necklace",
+    "price": 1000.99,
+    "image": "valora_necklace.jpg",
+    "description": "A masterpiece of opulence, crafted from platinum and adorned with radiant emerald-cut diamonds, exuding timeless grace and brilliance.",
+    "features": "Platinum Setting, Intricate Handcrafted Design, Adjustable Fit",
+    "caption": "Unrivaled beauty, infinite brilliance.",
+    "rating": "4.9",
+    "reviewsCount": "30",
+    "sizes": ["40", "45", "50"]
+  },
+
+  "19": {
+    "name": "Aurielle Earrings",
+    "price": 1090.99,
+    "image": "aurielle_earrings.jpg",
+    "description": "A symphony of elegance, featuring 18K white gold, lustrous South Sea pearls, and brilliant-cut diamonds, creating a timeless allure with every movement.",
+    "features": "24K Gold, Intricate Handcrafted Design, Secure Closure",
+    "caption": "Elegance in every drop of light.",
+    "rating": "4.9",
+    "reviewsCount": "39",
+    "sizes":["16", "18", "20", "22"]
+  },
+
+  "20": {
+    "name": "Regent Chain Ring",
+    "price": 700.99,
+    "image": "regent_chain_ring.jpg",
+    "description": "Redefines modern luxury, crafted from 18K yellow gold in an interlocking chain design, elegantly accented with pavé-set brilliant-cut diamonds for a bold yet refined statement.",
+    "caption": "Strength in design, brilliance in detail.",
+    "rating": "4.9",
+    "reviewsCount": "39",
+    "sizes":["5", "6", "7", "8", "9", "10"]
+  },
+
+  "21": {
+    "name": "Solara Hoops",
+    "price": 900.99,
+    "image": "solara_hoops.jpg",
+    "description": "are crafted from 18K white gold, featuring a seamless row of brilliant-cut gold, creating a dazzling effect with every movement.",
+    "features": "18K White Gold, Brilliant-Cut Diamonds, Lightweight Comfort, Secure Latch Closure",
+    "caption": "Endless sparkle, effortless elegance.",
+    "rating": "4.9",
+    "reviewsCount": "65",
+    "sizes":["16", "18", "20", "22"]
+  },
+
+  "22": {
+    "name": "Lustre Bracelet",
+    "price": 1000.99,
+    "image": "lustre_bracelet.jpg",
+    "description": "Showcases a bold 18K yellow gold, adorned with pavé-set diamonds, balancing strength and sophistication.",
+    "features": "18K Yellow Gold, Pavé-Set Diamonds, Adjustable Claspt",
+    "caption": "A statement of power and grace.",
+    "rating": "4.9",
+    "reviewsCount": "58",
+    "sizes": ["16", "18", "20", "22"]
+  },
+
+  "23": {
+    "name": "Etherea Pendant Necklace",
+    "price": 1200.99,
+    "image": "etherea_pendant_necklace.jpg",
+    "description": "Features a luminous 18K rose gold chain, delicately suspending a pear-shaped diamond pendant, symbolizing timeless beauty.",
+    "features": " 18K Rose Gold, Pear-Shaped Diamond, Adjustable Length, Handcrafted Setting",
+    "caption": "A single drop of brilliance, infinite elegance.",
+    "rating": "4.9",
+    "reviewsCount": "72",
+    "sizes": ["40", "45", "50"]
+  },
+
+  "24": {
+    "name": "Majeste Ring",
+    "price": 900.99,
+    "image": "majeste_ring.jpg",
+    "description": "Merges contemporary style with classic luxury, featuring 18K white gold interwoven links adorned with round-cut diamonds for a bold yet refined look.",
+    "features": "18K Gold Handcrafted Precision, Seamless Design, Comfort Fit.",
+    "caption": "Strength, beauty, and brilliance intertwined.",
+    "rating": "5.0",
+    "reviewsCount": "54",
+    "sizes": ["5", "6", "7", "8", "9", "10"]
+  }
+
+}
